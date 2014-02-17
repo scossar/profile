@@ -1,0 +1,49 @@
+extends /layouts/_default
+
+block content
+  include testeleven/_nav
+  include testeleven/_header
+  .icon-testeleven_logo_large_light
+    article.testeleven
+      h2 finding the simplest solutions
+      p
+        span.name TestEleven 
+        |is a small web development business based out of Nanaimo
+        |BC. We build websites that are clear and easy to use.
+      h3 print based design
+      p
+        |Our visual design style is taken from the world of print - books and
+        |magazines. For us, the simple combination of text with headings,
+        |menues, and images, is enough to communicate what we have to say.
+        |We feel that the computer is a <em>means</em> to help human to human
+        |communication. It should bever become and end in itself.
+      h3 modern best practices
+      p
+        |The internals of our projects - the coding and the delivery over the
+        |web - make use of modern best practices. Our projects are built using
+        |proven front and back end frameworks - Rails, Sinatra, Yeoman, and
+        |Ember. To ensure fast loading times for the client, our code is
+        |minified and hosted on a Content Delivery Network.
+    aside.testeleven
+      h3 portfolio:
+      h4
+        a(href="#") numerology
+      p
+        |A javascript application that takes numbers or letters as input, and
+        |outputs their numerological equivalent.
+      p
+        |Numerology makes a great computer science problem, as each letter's
+        |number is the modulus 9 of it's index in the alphabet.
+      h4
+        a(href="#") Simon's odd jobs
+      p
+        |An example site for an odd jobs business. The site, (as well as the
+        |others on this page) is hosted cheaply on Amazon's S3 web service.
+
+      p
+        |S3 will only serve static files. To get around this, the 
+        span.name odd jobs 
+        |contact form sends a POST request to an application that we have built
+        |on 
+        a(href="#") Heroku. 
+        That application handles our mail from various sites.

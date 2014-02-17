@@ -1,0 +1,38 @@
+// Vertical Rhythm
+
+$base-font-size: 16px
+$base-line-height: $base-font-size * 1.5
+$default-rhythm-border-style: solid
+$round-to-nearest-half-line: true
+$min-line-padding: 2px
+
++establish-baseline
+h1
+  +adjust-font-size-to(50px)
+h2
+  +adjust-font-size-to(38px)
+h3
+  +adjust-font-size-to(28px)
+h4, nav a
+  +adjust-font-size-to(21px)
+small
+  +adjust-font-size-to(12px)
+// Font Families
++font-face("open_sans",font-files("/styles/fonts/OpenSans-Regular-webfont.woff","/styles/fonts/OpenSans-Regular-webfont.ttf","/styles/fonts/OpenSans-Regular-webfont.svg"),"/styles/fonts/OpenSans-Regular-webfont.eot")
++font-face("open_sans",font-files("/styles/fonts/OpenSans-Bold-webfont.woff","/styles/fonts/OpenSans-Bold-webfont.ttf","/styles/fonts/OpenSans-Bold-webfont.svg"),"/styles/fonts/OpenSans-Bold-webfont.eot", bold, normal)
++font-face("museo",font-files("/styles/fonts/Museo_Slab_500_2-webfont.woff","/styles/fonts/Museo_Slab_500_2-webfont.ttf","/styles/fonts/Museo_Slab_500_2-webfont.svg"),"/styles/fonts/Museo_Slab_500_2-webfont.eot")
+
+h1, h2, h3, h4, nav a
+  font-family: "museo"
+
+body
+  font-family: "open_sans"
+  color: $medium_gray
+h1, h2
+  color: $dark_gray
+h3
+  color: $medium_gray
+a
+  color: $blue
+  &:hover
+    color: $blue

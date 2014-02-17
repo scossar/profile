@@ -1,0 +1,22 @@
+extends /layouts/_default
+
+block content
+  include _nav
+  include _header
+  .icon-testeleven_logo_large_light
+    form(action="http://testeleven-contact.herokuapp.com/", method="post")
+      fieldset
+        legend contact us
+        input(type="hidden", name="to", value="scossar3@gmail.com")
+        input(type="hidden", name="subject", value="contact enquiry")
+        input(type="hidden", name="return_address", value="http://testeleven.com/testeleven")
+        label(for="from") your email address:
+        input(type="email", name="email", id="from")
+        br
+        label(for="name") Your name:
+        input(type="text", name="name", id="name")
+        br
+        label(for="body") message:
+        textarea(name="body", id="body")
+        br
+        input(type="submit", value="contact", class="sassy_button")

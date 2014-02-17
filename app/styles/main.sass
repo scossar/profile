@@ -1,0 +1,76 @@
+//
+// Main Stylesheet
+//
+
+@import "compass"
+@import "compass/reset"
+@import "compass/typography/lists/horizontal-list"
+@import "compass/layout/sticky-footer"
+@import "compass/utilities/general/clearfix"
+@import "sassy-buttons"
+@import "normalize"
+@import "h5bp_main"
+@import "grid"
+@import "utilities"
+@import "colors"
+@import "text"
+@import "my_classes"
+
+// footer
++sticky-footer(100px)
+header, footer, #root-footer
+  clear: both
+html, body, *
+  margin: 0
+footer
+  height: 100px
+  p.copy
+    padding-right: 1em
+    text-align: right
+
+.container
+  // Force images to scale down to their container widths.
+  img
+    max-width: 100%
+    height: auto
+// elements
+// main content
+.icon-testeleven_logo_large_light
+  width: 100%
+  +clearfix
+  background-position: center
+p
+  +leader
+  +trailer
+.name
+  font-weight: bold
+nav
+  ul
+    width: 100%
+    +clearfix
+    li
+      display: inline
+      float: right
+      padding-left: 2em
+header
+  .logo
+    width: 100%
+    +clearfix
+  h1
+    margin: 0
+    //padding-top: 0.3em
+    float: left
+    display: inline-block
+  .icon-testeleven_logo_dark_small
+    height: 64px
+    width: 64px
+    display: inline-block
+    float: left
+  .tag
+    p
+      margin-top: 0
+      padding: 0
+    position: relative
+    //top: -1em
+    display: inline-block
+    padding: 0
